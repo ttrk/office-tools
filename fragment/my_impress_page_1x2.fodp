@@ -1,0 +1,25 @@
+   <draw:page draw:name="page1" draw:style-name="dp3" draw:master-page-name="mithig-impress-template" presentation:presentation-page-layout-name="AL1T3" presentation:use-footer-name="ftr1" presentation:use-date-time-name="dtd1">
+    <draw:frame presentation:style-name="pr7" draw:layer="layout" svg:width="28cm" svg:height="2.49cm" svg:x="0cm" svg:y="0cm" presentation:class="title">
+     <draw:text-box>
+      <text:p>TITLE</text:p>
+     </draw:text-box>
+    </draw:frame>
+    <draw:frame draw:style-name="gr4" draw:text-style-name="P6" draw:layer="layout" svg:width="13.138cm" svg:height="13.138cm" svg:x="0.508cm" svg:y="2.907cm" presentation:class="graphic" presentation:user-transformed="true">
+     <draw:image xlink:href="PATHTOPICTURE_L" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+     </draw:image>
+    </draw:frame>
+    <draw:frame draw:style-name="gr4" draw:text-style-name="P6" draw:layer="layout" svg:width="13.138cm" svg:height="13.138cm" svg:x="14.304cm" svg:y="2.907cm" presentation:class="graphic" presentation:user-transformed="true">
+     <draw:image xlink:href="PATHTOPICTURE_R" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+     </draw:image>
+    </draw:frame>
+    <draw:frame draw:style-name="gr5" draw:layer="layout" svg:width="26.416cm" svg:height="0.962cm" svg:x="1.016cm" svg:y="16.51cm">
+     <draw:text-box>
+      <text:p>TEXTAREA_L</text:p>
+     </draw:text-box>
+    </draw:frame>
+    <draw:frame draw:style-name="gr5" draw:layer="layout" svg:width="12.954cm" svg:height="0.962cm" svg:x="14.916cm" svg:y="16.51cm">
+     <draw:text-box>
+      <text:p>TEXTAREA_R</text:p>
+     </draw:text-box>
+    </draw:frame>
+   </draw:page>

@@ -1,0 +1,2 @@
+ <office:body>
+  <office:presentation><presentation:footer-decl presentation:name="ftr1">NAME_LASTNAME</presentation:footer-decl><presentation:date-time-decl presentation:name="dtd1" presentation:source="current-date" style:data-style-name="D3"/>
