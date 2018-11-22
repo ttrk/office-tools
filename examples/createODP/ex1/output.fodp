@@ -1046,11 +1046,11 @@
      </draw:text-box>
     </draw:frame>
     <draw:frame draw:style-name="gr4" draw:text-style-name="P6" draw:layer="layout" svg:width="13.138cm" svg:height="13.138cm" svg:x="0.508cm" svg:y="2.907cm" presentation:class="graphic" presentation:user-transformed="true">
-     <draw:image xlink:href="/home/kaya/Documents/EclipseWorkSpace/office-tools/examples/createODP/ex1/plot1_gammajet_qgFraction.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+     <draw:image xlink:href="plot1_gammajet_qgFraction.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
      </draw:image>
     </draw:frame>
     <draw:frame draw:style-name="gr4" draw:text-style-name="P6" draw:layer="layout" svg:width="13.138cm" svg:height="13.138cm" svg:x="14.304cm" svg:y="2.907cm" presentation:class="graphic" presentation:user-transformed="true">
-     <draw:image xlink:href="/home/kaya/Documents/EclipseWorkSpace/office-tools/examples/createODP/ex1/plot2_jetphox.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+     <draw:image xlink:href="plot2_jetphox.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
      </draw:image>
     </draw:frame>
     <draw:frame draw:style-name="gr5" draw:layer="layout" svg:width="26.416cm" svg:height="0.962cm" svg:x="1.016cm" svg:y="16.51cm">
@@ -1071,11 +1071,11 @@
      </draw:text-box>
     </draw:frame>
     <draw:frame draw:style-name="gr4" draw:text-style-name="P6" draw:layer="layout" svg:width="13.138cm" svg:height="13.138cm" svg:x="0.508cm" svg:y="2.907cm" presentation:class="graphic" presentation:user-transformed="true">
-     <draw:image xlink:href="/home/kaya/Documents/EclipseWorkSpace/office-tools/examples/createODP/ex1/plot3_xjg_parton.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+     <draw:image xlink:href="plot3_xjg_parton.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
      </draw:image>
     </draw:frame>
     <draw:frame draw:style-name="gr4" draw:text-style-name="P6" draw:layer="layout" svg:width="13.138cm" svg:height="13.138cm" svg:x="14.304cm" svg:y="2.907cm" presentation:class="graphic" presentation:user-transformed="true">
-     <draw:image xlink:href="/home/kaya/Documents/EclipseWorkSpace/office-tools/examples/createODP/ex1/plot4_eta_jetphox.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+     <draw:image xlink:href="plot4_eta_jetphox.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
      </draw:image>
     </draw:frame>
     <draw:frame draw:style-name="gr5" draw:layer="layout" svg:width="26.416cm" svg:height="0.962cm" svg:x="1.016cm" svg:y="16.51cm">

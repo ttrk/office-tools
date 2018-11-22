@@ -57,9 +57,9 @@ do
   cp $baseDir"/"$basePage1x2 $pageTmp
 
   title=${titles[i1]}
-  plot1=$(readlink -f ${plotsLHS[i1]})
+  plot1=$(basename ${plotsLHS[i1]})
   text1=${textsLHS[i1]}
-  plot2=$(readlink -f ${plotsRHS[i1]})
+  plot2=$(basename ${plotsRHS[i1]})
   text2=${textsRHS[i1]}
 
   sed -i "s;TITLE;${title};g" $pageTmp

@@ -17,5 +17,5 @@ Example 1 to create ODP presentation and export it to pdf file.
 
   ```bash
   cd examples/createODP/
-  ./runExample1.sh  # the output is placed under example1/
+  ./runExample1.sh  # the output is placed under ex1/
   ```
