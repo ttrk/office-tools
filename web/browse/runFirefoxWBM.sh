@@ -2,30 +2,49 @@
 
 RUN=327237
 
-webLinks=(
-"https://cmswbm.cern.ch/cmsdb/servlet/ChartL1TriggerRates?fromTime=&toTime=&fromLSNumber=&toLSNumber=&minRate=&maxRate=&minCount=&maxCount=&beforePrescale=1&rates=1&postDeadRatesHLT=1&drawCounts=0&drawLumisec=1&runID=${RUN}&bitID=154&type=0&TRIGGER_NAME=L1_MinimumBiasHF1_AND_BptxAND&LSLength=23.31040958"
-"https://cmswbm.cern.ch/cmsdb/servlet/ChartL1TriggerRates?fromTime=&toTime=&fromLSNumber=&toLSNumber=&minRate=&maxRate=&minCount=&maxCount=&beforePrescale=1&rates=1&postDeadRatesHLT=1&drawCounts=0&drawLumisec=1&runID=${RUN}&bitID=164&type=0&TRIGGER_NAME=L1_MinimumBiasHF2_AND_BptxAND&LSLength=23.31040958"
-"https://cmswbm.cern.ch/cmsdb/servlet/ChartL1TriggerRates?fromTime=&toTime=&fromLSNumber=&toLSNumber=&minRate=&maxRate=&minCount=&maxCount=&beforePrescale=1&rates=1&postDeadRatesHLT=1&drawCounts=0&drawLumisec=1&runID=${RUN}&bitID=346&type=0&TRIGGER_NAME=L1_SingleEG7_BptxAND&LSLength=23.31040958"
-"https://cmswbm.cern.ch/cmsdb/servlet/ChartL1TriggerRates?fromTime=&toTime=&fromLSNumber=&toLSNumber=&minRate=&maxRate=&minCount=&maxCount=&beforePrescale=1&rates=1&postDeadRatesHLT=1&drawCounts=0&drawLumisec=1&runID=${RUN}&bitID=349&type=0&TRIGGER_NAME=L1_SingleEG21_BptxAND&LSLength=23.31040958"
-"https://cmswbm.cern.ch/cmsdb/servlet/ChartL1TriggerRates?fromTime=&toTime=&fromLSNumber=&toLSNumber=&minRate=&maxRate=&minCount=&maxCount=&beforePrescale=1&rates=1&postDeadRatesHLT=1&drawCounts=0&drawLumisec=1&runID=${RUN}&bitID=350&type=0&TRIGGER_NAME=L1_SingleEG30_BptxAND&LSLength=23.31040958"
-"https://cmswbm.cern.ch/cmsdb/servlet/ChartHLTTriggerRates?drawCounts=0&drawLumisec=1&runID=${RUN}&pathID=2133570&TRIGGER_PATH=HLT_HIGEDPhoton40_EB_v1&LSLength=23.31040958"
-"https://cmswbm.cern.ch/cmsdb/servlet/ChartHLTTriggerRates?drawCounts=0&drawLumisec=1&runID=${RUN}&pathID=2133564&TRIGGER_PATH=HLT_HIGEDPhoton40_v1&LSLength=23.31040958"
-"https://cmswbm.cern.ch/cmsdb/servlet/ChartHLTTriggerRates?drawCounts=0&drawLumisec=1&runID=${RUN}&pathID=2133556&TRIGGER_PATH=HLT_HIIslandPhoton40_Eta1p5_v1&LSLength=23.31040958"
-"https://cmswbm.cern.ch/cmsdb/servlet/ChartHLTTriggerRates?drawCounts=0&drawLumisec=1&runID=${RUN}&pathID=2133555&TRIGGER_PATH=HLT_HIIslandPhoton40_Eta2p4_v1&LSLength=23.31040958"
-"https://cmswbm.cern.ch/cmsdb/servlet/ChartHLTTriggerRates?drawCounts=0&drawLumisec=1&runID=${RUN}&pathID=2133569&TRIGGER_PATH=HLT_HIGEDPhoton30_EB_v1&LSLength=23.31040958"
-"https://cmswbm.cern.ch/cmsdb/servlet/ChartHLTTriggerRates?drawCounts=0&drawLumisec=1&runID=${RUN}&pathID=2133563&TRIGGER_PATH=HLT_HIGEDPhoton30_v1&LSLength=23.31040958"
-"https://cmswbm.cern.ch/cmsdb/servlet/ChartHLTTriggerRates?drawCounts=0&drawLumisec=1&runID=${RUN}&pathID=2133554&TRIGGER_PATH=HLT_HIIslandPhoton30_Eta1p5_v1&LSLength=23.31040958"
-"https://cmswbm.cern.ch/cmsdb/servlet/ChartHLTTriggerRates?drawCounts=0&drawLumisec=1&runID=${RUN}&pathID=2133553&TRIGGER_PATH=HLT_HIIslandPhoton30_Eta2p4_v1&LSLength=23.31040958"
+triggers=(
+# path name, ID
+"L1_MinimumBiasHF1_AND_BptxAND,154"
+"L1_MinimumBiasHF2_AND_BptxAND,156"
+"L1_SingleEG7_BptxAND,346"
+"L1_SingleEG21_BptxAND,349"
+"L1_SingleEG30_BptxAND,350"
+"HLT_HIGEDPhoton40_v1,2133564"
+"HLT_HIGEDPhoton40_EB_v1,2133570"
+"HLT_HIIslandPhoton40_Eta2p4_v1,2133555"
+"HLT_HIIslandPhoton40_Eta1p5_v1,2133556"
+"HLT_HIGEDPhoton30_v1,2133563"
+"HLT_HIGEDPhoton30_EB_v1,2133569"
+"HLT_HIIslandPhoton30_Eta2p4_v1,2133553"
+"HLT_HIIslandPhoton30_Eta1p5_v1,2133554"
 );
 
-set -x
+linkL1Temp="https://cmswbm.cern.ch/cmsdb/servlet/ChartL1TriggerRates?fromTime=&toTime=&fromLSNumber=&toLSNumber=&minRate=&maxRate=&minCount=&maxCount=&beforePrescale=1&rates=1&postDeadRatesHLT=1&drawCounts=0&drawLumisec=1&runID=YOURRUN&bitID=YOURPATHID&type=0&TRIGGER_NAME=YOURPATHNAME&LSLength=23.31040958"
 
-arrayIndices=${!webLinks[*]}
+linkHLTTemp="https://cmswbm.cern.ch/cmsdb/servlet/ChartHLTTriggerRates?drawCounts=0&drawLumisec=1&runID=YOURRUN&pathID=YOURPATHID&TRIGGER_PATH=YOURPATHNAME&LSLength=23.31040958"
+
+arrayIndices=${!triggers[*]}
 for i1 in $arrayIndices
 do
-    webLink=${webLinks[i1]}
+  trigger=${triggers[i1]}
+  pathName=$(cut -d',' -f1 <<< ${trigger})
+  pathID=$(cut -d',' -f2 <<< ${trigger})
 
+  webLink=""
+  if [[ $pathName = L1_* ]]; then
+     webLink=$linkL1Temp
+  elif [[ $pathName = HLT_* ]]; then
+     webLink=$linkHLTTemp
+  fi
+
+  webLink="${webLink/YOURRUN/${RUN}}"
+  webLink="${webLink/YOURPATHID/${pathID}}"
+  webLink="${webLink/YOURPATHNAME/${pathName}}"
+
+  if [ ! -z $webLink ]; then
     firefox $webLink
-done
+    echo "firefox $webLink"
+  fi
 
+done
 
