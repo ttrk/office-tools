@@ -552,6 +552,9 @@
   <style:style style:name="gr6" style:family="graphic">
    <style:graphic-properties style:protect="size"/>
   </style:style>
+  <style:style style:name="grRedOpenRectangle" style:family="graphic" style:parent-style-name="standard">
+   <style:graphic-properties svg:stroke-width="0.106cm" svg:stroke-color="#ff3333" draw:marker-start-width="0.358cm" draw:marker-end-width="0.358cm" draw:fill="none" fo:padding-top="0.177cm" fo:padding-bottom="0.177cm" fo:padding-left="0.302cm" fo:padding-right="0.302cm" style:protect="size"/>
+  </style:style>
   <style:style style:name="pr1" style:family="presentation" style:parent-style-name="Default-backgroundobjects">
    <style:graphic-properties draw:stroke="none" draw:fill="none" draw:fill-color="#ffffff" draw:auto-grow-height="false" fo:min-height="1.449cm"/>
   </style:style>
